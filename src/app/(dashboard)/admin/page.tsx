@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from 'next/link';
 import { cards, cards2, statList, todayAbsent, invoice, payment, clients, recentProjects } from './AdminObj';
@@ -268,7 +270,7 @@ export default function AdminDashboard() {
                               <td className="px-5 pe-14 py-3 border border-[#2e3840] text-[#8e8e8e]"><Link href="/" className="flex items-center gap-3"><Image src={img} alt="alt" className="h-10 w-10 rounded-full" />{name}</Link></td>
                               <td className="px-5 py-3 border border-[#2e3840] text-[#fff] text-sm font-semibold"><Link href="/">{email}</Link></td>
                               <td className="px-3 py-3 border border-[#2e3840]">{status}</td>
-                              <td className="px-9 border border-[#2e3840] text-[#fff] text-center">{action}</td>
+                              <td className="px-9 border border-[#2e3840] text-[#fff] text-center"><button onClick={() => {console.log('clicked')}}>{action}</button></td>
                            </tr>
                         ))}
                      </tbody>

@@ -18,7 +18,7 @@ export default function RootLayout({
    children: React.ReactNode;
 }>) {
    return (
-      <body className="bg-[#263238]">
+      <div className="bg-[#263238]">
          <BarProvider>
             <header className="navbar relative pb-16 z-50">
                <Navbar />
@@ -30,6 +30,6 @@ export default function RootLayout({
                <LayoutConsumer>{children}</LayoutConsumer>
             </section>
          </BarProvider>
-      </body>
+      </div>
    );
 }
