@@ -18,7 +18,7 @@ export default function RootLayout({
    children: React.ReactNode;
 }>) {
    return (
-      <body className="bg-black">
+      <body className="bg-[#263238]">
          <BarProvider>
             <header className="navbar relative pb-16 z-50">
                <Navbar />
