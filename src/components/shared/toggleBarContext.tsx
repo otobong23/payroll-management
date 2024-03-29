@@ -13,7 +13,7 @@ export type contextType = {
 export const BarStateContext = createContext<contextType>({} as contextType)
 
 export default function BarProvider({ children }:BarStateProviderProps){
-   const [barState, setBarState] = useState(true)
+   const [barState, setBarState] = useState(false)
    const setBar = () => {
       barState ? setBarState(false) : setBarState(true)
    }
@@ -24,7 +24,7 @@ export default function BarProvider({ children }:BarStateProviderProps){
 export const LayoutConsumer = ({children}:BarStateProviderProps) => {
    const {barState} = useContext(BarStateContext)
    return (
-      <div className="content w-full transition-all duration-300" style={{paddingLeft: barState ? 229 : 59 }}>
+      <div className={"content w-full transition-all duration-300 "+ (barState ? 'lg:pl-[229px]' : 'lg:pl-[59px]')}>
          {children}
        </div>
    )

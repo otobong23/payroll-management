@@ -23,7 +23,7 @@ export default function RootLayout({
             <header className="navbar relative pb-16 z-50">
                <Navbar />
             </header>
-            <section className="col inline-flex">
+            <section className="col">
                <main className="sidebar relative z-50 overflow-hidden">
                   <Sidebar />
                </main>

@@ -16,7 +16,7 @@ const classValues = "outline-0 bg-[#fbfbfb] border border-[#e3e3e3] h-[46px] rou
 
 export default function Login() {
    const { values, handleChange, resetForm } = useForm({ Email: '', Password: '' })
-   const { state, toggleState } = useToggle(false)
+   const [ state, toggleState ] = useToggle(false)
    const handleSubmit = (e: React.FormEvent) => {
       e.preventDefault()
    }
@@ -37,11 +37,11 @@ export default function Login() {
                   <div className="col pb-[1.5rem]">
                      <div className="label flex justify-between text-base font-normal py-[7px]">
                         <label htmlFor="Password">Password</label>
-                        <Link href='/forgotPassword' children='Forgot password?' className="text-[#888888]" />
+                        <Link href='/forgotPassword' className="text-[#888888]">Forgot password?</Link>
                      </div>
                      <div className="input relative">
                         <Password type={state ? "text" : "password"} classValue={classValues} name="Password" PasswordValue={values.Password} setPasswordValue={handleChange} />
-                        <button onClick={toggleState} className="absolute right-0 top-1/2 -translate-y-1/2 -translate-x-1/2">
+                        <button title="click" onClick={toggleState} className="absolute right-0 top-1/2 -translate-y-1/2 -translate-x-1/2">
                            <FontAwesomeIcon icon={state ? faEyeSlash : faEye} className="" />
                         </button>
                      </div>
@@ -49,7 +49,7 @@ export default function Login() {
                   <div className="pb-[1.5rem] w-full">
                      <ClickButton x={26} y={10} fontSize={22} handleClick={() => {console.log('2')}}>Login</ClickButton>
                   </div>
-                  <p className="pb-4 text-center text-nowrap">Don't have an account yet? <Link href='' children="Register" className="text-[#0d6efd] outline-0" /></p>
+                  <p className="pb-4 text-center text-nowrap">Don&apos;t have an account yet? <Link href='' className="text-[#0d6efd] outline-0">Register</Link></p>
                </form>
             </div>
          </aside>

@@ -9,9 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        "gradient-color": 'var(--gradient)',
       },
     },
   },
   plugins: [],
-};
+}
 export default config;
