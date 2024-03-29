@@ -57,7 +57,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center fixed top-0 left-0 w-full bg-[#263238] border-[0.5px] border-[#263238]">
          <div className="mobile-togglebar lg:hidden px-5">
             <button onClick={setBar}>
-               <FontAwesomeIcon icon={faBars} className="w-[21px] text-white" />
+               <FontAwesomeIcon icon={faBars} className="w-6 text-white" />
             </button>
          </div>
          <div className="col flex items-center py-[10px] lg:py-0 px-[5px]">

@@ -38,8 +38,8 @@ function page() {
             </div>
             <div className="designation bg-[#16191c] p-3 rounded text-[#bbc4cc]">
                 <select name="designation" title='Select Designation' className=' w-full outline-none rounded-none bg-[#16191c]'>
-                    <p className='text-white'>Designation</p>
-                    <option  selected>Select Designation</option>
+                    {/* <p className='text-white'>Designation</p> */}
+                    <option>Select Designation</option>
                     <option value="web developer">Web Developer</option>
                     <option value="web designer">Web Designer</option>
                     <option value="andriod developer">Andriod Developer</option>
