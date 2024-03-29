@@ -6,12 +6,12 @@ function Profile() {
   return (
     <div>
         <div className='my-7'>
-            <div className="personal text-[#bbc4cc] grid grid-cols-2 gap-6">
+            <div className="personal text-[#bbc4cc] grid sm:grid-cols-2 gap-6">
                <div className="personal-info p-4 rounded-lg bg-[#16191c]">
                     <header className='py-3'>
                         <h1 className='text-[1.4rem]'>Personal Informations</h1>
                     </header>
-                    <div className="informations flex flex-col gap-2">
+                    <div className="informations flex flex-col gap-2 text-[.83rem]">
                         <div className="passport-no flex justify-start gap-9">
                             <h1 className='flex-1'>Passport No.</h1>
                             <p className='flex-[2] text-[#8e8c8a]'>9876543210</p>
@@ -51,7 +51,7 @@ function Profile() {
                     </div>
                </div>
 
-               <div className="emergency-contact p-4 rounded-lg bg-[#16191c]">
+               <div className="emergency-contact p-4 rounded-lg bg-[#16191c] text-[.83rem]">
                     <header className='py-3'>
                         <h1 className='text-[1.3rem]'>Emergency Contact</h1>
                     </header>
@@ -94,7 +94,7 @@ function Profile() {
                     </div>
                </div>
 
-               <div className="bank-information p-4 rounded-lg bg-[#16191c]">
+               <div className="bank-information p-4 rounded-lg bg-[#16191c] text-[.83rem]">
                     <header className='py-3'>
                         <h1 className='text-[1.2rem]'>Bank information</h1>
                     </header>
@@ -118,12 +118,12 @@ function Profile() {
                     </div>
                </div>
 
-               <div className="family-informations p-4 rounded-lg bg-[#16191c] overflow-hidden">
+               <div className="family-informations p-4 rounded-lg bg-[#16191c] overflow-hidden text-[.83rem]">
                     <div>
                         <h1 className='text-[1.3rem] mb-3'>Family Information</h1>
                     </div>
                     <div className="whitespace-nowrap overflow-x-scroll">
-                        <table className='w-[400px]'>
+                        <table className='w-full md:w-[100px'>
                             <thead>
                                 <tr className='bg-[#34444c] border-b border-[#2a3733]'>
                                     <td className='p-3'><h1>Name</h1></td>
@@ -146,16 +146,16 @@ function Profile() {
                     </div>
                </div>
 
-               <div className="educations-info bg-[#16191c] p-4 rounded-md">
+               <div className="educations-info bg-[#16191c] p-4 rounded-md text-[.83rem]">
                     <header>
                         <h1 className='text-[1.3rem]'>Education Informations</h1>
                     </header>
                     <div className='ps-3'>
                         <div className="info1 flex gap-3">
-                            <div className="circle bg-slate-400 w-[2px] h-[120px] relative top-5">
+                            <div className="circle bg-slate-400 w-[2px] h-[94px] relative top-5">
                                 <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[-2px]'></span>
                             </div>
-                            <div className='bg-[#2e3840] p-2 mt-3'>
+                            <div className='bg-[#2e3840] p-2 mt-3 w-full'>
                                 <h1 className='text-[#8e8c8a]'>
                                     International College of Arts and Science (UG)
                                 </h1>
@@ -166,10 +166,10 @@ function Profile() {
                             </div>
                         </div>
                         <div className="info1 flex gap-3">
-                            <div className="circle bg-slate-400 w-[2px] h-[107px] relative top-5">
-                                <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[5px]'></span>
+                            <div className="circle bg-slate-400 w-[2px] h-[4.7rem] sm:h-[6.7rem] relative top-5 sm:top-[6px]">
+                                <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[5px] sm:top-[23px]'></span>
                             </div>
-                            <div className='bg-[#2e3840] p-2 mt-5'>
+                            <div className='bg-[#2e3840] p-2 mt-5 w-full'>
                                 <h1 className='text-[#8e8c8a]'>
                                     International College of Arts and Science (UG)
                                 </h1>
@@ -182,7 +182,7 @@ function Profile() {
                     </div>
                </div>
 
-               <div className="educations-info bg-[#16191c] p-4 rounded-md">
+               <div className="educations-info bg-[#16191c] p-4 rounded-md text-[.83rem]">
                     <header>
                         <h1 className='text-[1.3rem]'>Experiance</h1>
                     </header>

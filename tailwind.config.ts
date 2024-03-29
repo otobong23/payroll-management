@@ -11,6 +11,9 @@ const config: Config = {
       backgroundImage: {
         "gradient-color": 'var(--gradient)',
       },
+      screens: {
+        "smm": '575px',
+      },
     },
   },
   plugins: [],
