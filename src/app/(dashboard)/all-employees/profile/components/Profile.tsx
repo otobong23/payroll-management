@@ -5,9 +5,9 @@ import { faEllipsisV } from '@fortawesome/free-solid-svg-icons/faEllipsisV'
 function Profile() {
   return (
     <div>
-        <div>
-            <div className="personal text-[#bbc4cc]">
-               <div className="personal-info my-5 p-4 rounded-lg bg-[#16191c]">
+        <div className='my-7'>
+            <div className="personal text-[#bbc4cc] grid grid-cols-2 gap-6">
+               <div className="personal-info p-4 rounded-lg bg-[#16191c]">
                     <header className='py-3'>
                         <h1 className='text-[1.4rem]'>Personal Informations</h1>
                     </header>
@@ -94,7 +94,7 @@ function Profile() {
                     </div>
                </div>
 
-               <div className="bank-information my-4 p-4 rounded-lg bg-[#16191c]">
+               <div className="bank-information p-4 rounded-lg bg-[#16191c]">
                     <header className='py-3'>
                         <h1 className='text-[1.2rem]'>Bank information</h1>
                     </header>
@@ -118,9 +118,9 @@ function Profile() {
                     </div>
                </div>
 
-               <div className="family-informations my-4 p-4 rounded-lg bg-[#16191c] overflow-hidden">
+               <div className="family-informations p-4 rounded-lg bg-[#16191c] overflow-hidden">
                     <div>
-                        <h1>Family Information</h1>
+                        <h1 className='text-[1.3rem] mb-3'>Family Information</h1>
                     </div>
                     <div className="whitespace-nowrap overflow-x-scroll">
                         <table className='w-[400px]'>
@@ -146,40 +146,78 @@ function Profile() {
                     </div>
                </div>
 
-               <div className="educations-info">
+               <div className="educations-info bg-[#16191c] p-4 rounded-md">
                     <header>
-                        <h1>Education Informations</h1>
+                        <h1 className='text-[1.3rem]'>Education Informations</h1>
                     </header>
-
-                    <div>
-                        <div>
-                            <div className="info1 flex gap-3">
-                                <div className="circle bg-slate-400 w-[2px] h-24 relative">
-                                    <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[-2px]'></span>
-                                </div>
-                                <div className='bg-[#16191c] p-3'>
-                                    <h1 className='text-[#8e8c8a]'>
-                                        International College of Arts and Science (UG)
-                                    </h1>
-                                    <p>
-                                        Bsc Computer Science
-                                    </p>
-                                    <small>2000 - 2003</small>
-                                </div>
+                    <div className='ps-3'>
+                        <div className="info1 flex gap-3">
+                            <div className="circle bg-slate-400 w-[2px] h-[120px] relative top-5">
+                                <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[-2px]'></span>
                             </div>
-                            <div className="info1 flex gap-3">
-                                <div className="circle bg-slate-400 w-[2px] h-24 relative">
-                                    <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[-2px]'></span>
-                                </div>
-                                <div className='bg-[#16191c] p-3'>
-                                    <h1 className='text-[#8e8c8a]'>
-                                        International College of Arts and Science (UG)
-                                    </h1>
-                                    <p>
-                                        Bsc Computer Science
-                                    </p>
-                                    <small>2000 - 2003</small>
-                                </div>
+                            <div className='bg-[#2e3840] p-2 mt-3'>
+                                <h1 className='text-[#8e8c8a]'>
+                                    International College of Arts and Science (UG)
+                                </h1>
+                                <p>
+                                    Bsc Computer Science
+                                </p>
+                                <small>2000 - 2003</small>
+                            </div>
+                        </div>
+                        <div className="info1 flex gap-3">
+                            <div className="circle bg-slate-400 w-[2px] h-[107px] relative top-5">
+                                <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[5px]'></span>
+                            </div>
+                            <div className='bg-[#2e3840] p-2 mt-5'>
+                                <h1 className='text-[#8e8c8a]'>
+                                    International College of Arts and Science (UG)
+                                </h1>
+                                <p>
+                                    Bsc Computer Science
+                                </p>
+                                <small>2000 - 2003</small>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+
+               <div className="educations-info bg-[#16191c] p-4 rounded-md">
+                    <header>
+                        <h1 className='text-[1.3rem]'>Experiance</h1>
+                    </header>
+                    <div className='ps-3'>
+                        <div className="info1 flex gap-6">
+                            <div className="circle bg-slate-400 w-[2px] relative top-5">
+                                <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[-2px]'></span>
+                            </div>
+                            <div className='bg-[#2e3840] p-2 mt-3 w-full'>
+                                <h1 className='text-[#8e8c8a]'>
+                                    Web Designer at Zen Corporation
+                                </h1>
+                                <small>Jan 2013-Present (5 years 2 months)</small>
+                            </div>
+                        </div>
+                        <div className="info1 flex gap-6">
+                            <div className="circle bg-slate-400 w-[2px] relative top-5">
+                                <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[-2px]'></span>
+                            </div>
+                            <div className='bg-[#2e3840] p-2 mt-4 w-full'>
+                                <h1 className='text-[#8e8c8a]'>
+                                    Web Designer at Ron-Tech
+                                </h1>
+                                <small>Jan 2013-Present (5 years 2 months)</small>
+                            </div>
+                        </div>
+                        <div className="info1 flex gap-6">
+                            <div className="circle bg-slate-400 w-[2px] h-[54px] relative top-5">
+                                <span className='w-3 h-3 bg-slate-400 absolute rounded-full right-[-5px] top-[-2px]'></span>
+                            </div>
+                            <div className='bg-[#2e3840] p-2 mt-4 w-full'>
+                                <h1 className='text-[#8e8c8a]'>
+                                    Web Designer at Dalt Technology
+                                </h1>
+                                <small>Jan 2013-Present (5 years 2 months)</small>
                             </div>
                         </div>
                     </div>
