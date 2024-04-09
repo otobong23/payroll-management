@@ -25,8 +25,8 @@ function page() {
                 <Image src={user} alt="alt" className='w-[112px] rounded-full'/>
                 </div>
             </div>
-            <div className='sm:flex sm:gap-3'>
-                <div className="profile text-center items-center pb-3 border-b-2 sm:border-b-0 border-dashed sm:border-r-2 text-[.8rem] sm:pe-3 sm:h-44">
+            <div className='sm:flex sm:gap-3 w-full'>
+                <div className="profile text-center items-center pb-3 border-b-2 sm:border-b-0 border-dashed sm:border-r-2 text-[.8rem] sm:pe-3 sm:h-44 lg:w-[40%] lg:pe-6">
                     <div className='smm:text-left'>
                         <h1 className='text-[#bbc4cc] text-[.8rem]'>John Doe</h1>
                         <p className='text-[#8e8c8a] text-[.7rem]'>UI/UX Design Team</p>
@@ -41,7 +41,7 @@ function page() {
                         <button className=' bg-gradient-color text-white p-2 px-4 rounded-md text-[.84rem]'>Send Message</button>
                     </div>
                 </div>
-                <div className="details py-4 flex flex-col gap-2">
+                <div className="details py-4 flex flex-col gap-2 lg:w-[40%]">
                     <div className="phone flex justify-start gap-8">
                         <h1 className='text-[#bbc4cc] flex-1'>Phone:</h1>
                         <p className='flex-[2] text-[#1628C3]'>9876543210</p>
@@ -57,9 +57,7 @@ function page() {
                     <div className="address flex justify-start gap-8">
                         <h1 className='text-[#bbc4cc] flex-1'>Address:</h1>
                         <div className='text-[#828c8a] text-left flex-[2]'>
-                            <p>1861 Bayonne Ave,</p>
-                            <p>Manchester Township, Nj,</p>
-                            <p>08759</p>
+                            <p>1861 Bayonne Ave, Manchester Township, Nj, 08759</p>
                         </div>
                     </div>
                     <div className="gender flex justify-start gap-8">
